@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>Ordergrid_Images_Payment_Shipping</name>
+    <version>2.0.2</version>
+    <stability>stable</stability>
+    <license>Open Software License (OSL)</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>We have integrated advanced features of order grid that will improve and ease order processing procedure</summary>
+    <description>In Magento, handy order management tools are the blueprint for successful order handling. A default order grid page in Magento does not show multiple orders&#x2019; thumbnails, the payment and the shipping method in its list, which makes it very inconvenient to process orders.</description>
+    <notes>This is the latest  released version of Advanced Order Grids with product images by Supertron v2.0.2</notes>
+    <authors><author><name>mailsupertron</name><user>mailsupertron</user><email>susmit.supertron@gmail.com</email></author></authors>
+    <date>2014-01-28</date>
+    <time>06:08:13</time>
+    <contents><target name="magecommunity"><dir name="Supertron"><dir name="OrdersGrid"><dir name="Block"><dir name="Adminhtml"><dir name="Sales"><dir name="Order"><dir name="Filter"><file name="PaymentMethod.php" hash="06650f04f85951b0d182d8b15ffb7b53"/><file name="ShippingMethod.php" hash="c0449975153d5c1f9a3c54a2a7a7b6f6"/></dir><file name="Grid.php" hash="971c09f28bbfb93bcf7e8a3ebaaf7126"/><dir name="Renderer"><file name="Image.php" hash="18546941c92b261c36e71b6aaebec473"/><file name="PaymentMethod.php" hash="b2cda76c797a2cc2fd83018aef63dac9"/><file name="ShippingMethod.php" hash="9774194633a0c7c45b00dfb0507d0dad"/></dir></dir></dir></dir></dir><dir name="Helper"><file name="Data.php" hash="3e3235c9057133a11e6970d89d821efe"/></dir><dir name="Model"><file name="Observer.php" hash="c09c3160b4dd7cd201c66738fa2e0ae2"/></dir><dir name="etc"><file name="config.xml" hash="6ac0918e8b3bdaf3313adf6794e77e40"/></dir><dir name="sql"><dir name="ordersgrid_setup"><file name="mysql4-install-0.1.0.php" hash="5dff6388a42f5b4a48fb0b273e9a5ff4"/><file name="mysql4-upgrade-0.1.0-0.1.1.php" hash="8d106d42705e06333144a8317d296fdb"/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Supertron_OrdersGrid.xml" hash="1e80f76e68b4ee91e55b44e5dfe5713e"/></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><dir name="supertron"><file name="ordersgrid.xml" hash="de61674b1d4a147876f5505c4cc709e1"/></dir></dir></dir></dir></dir></target><target name="mageskin"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="images"><file name="buttons.png" hash="fc4d2bba15acb4c75aab350db1d675c8"/></dir><dir name="js"><file name="jquery.min.js" hash="acc0adc6c188845a409bf158d2de4451"/><file name="jquery.tinycarousel.min.js" hash="886b2b207b2ee394211d6277acff2530"/></dir><dir name="css"><file name="website.css" hash="18009b71fee517cb3269b43ce74c4492"/></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php><package><name>Mage_Core_Modules</name><channel>community</channel><min>1.5</min><max>2.0</max></package></required></dependencies>
+</package>

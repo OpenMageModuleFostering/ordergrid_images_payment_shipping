@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Magento initial config
+ *
+ * @author     Supertron
+ * @copyright   Copyright (c) 2014 Supertron Infotech Pvt Ltd (http://www.supertroninfotech.in/)
+
+ */
+-->
+<config>
+    <modules>
+        <Supertron_OrdersGrid>
+            <active>true</active>
+            <codePool>community</codePool>
+            <depends>
+                <Mage_Sales />
+            </depends>
+        </Supertron_OrdersGrid>
+    </modules>
+</config>

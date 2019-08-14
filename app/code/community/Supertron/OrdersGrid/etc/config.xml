@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+* Module configuration
+*
+* @author Supertron
+*/
+
+-->
+<config>
+    <modules>
+        <Supertron_OrdersGrid>
+            <version>0.2.0</version>
+        </Supertron_OrdersGrid>
+    </modules>
+
+	<global>
+        <resources>
+        
+            <ordersgrid_setup>
+                <setup>
+                    <module>Supertron_OrdersGrid</module>
+                    <class>Mage_Sales_Model_Mysql4_Setup</class>
+                </setup>
+            </ordersgrid_setup>
+        </resources>
+        
+		<blocks>
+			<ordersgrid>
+				<class>Supertron_OrdersGrid_Block</class>
+			</ordersgrid>
+			
+			<adminhtml>
+               <rewrite>
+                <sales_order_grid>Supertron_OrdersGrid_Block_Adminhtml_Sales_Order_Grid</sales_order_grid>
+               </rewrite>
+            </adminhtml>
+			 
+		</blocks>
+		
+        <helpers>
+            <ordersgrid>
+                <class>Supertron_OrdersGrid_Helper</class>
+            </ordersgrid>
+        </helpers>
+        
+        <models>
+            <ordersgrid>
+                <class>Supertron_OrdersGrid_Model</class>
+            </ordersgrid>
+        </models>
+        
+        <events>
+          
+            <sales_order_resource_init_virtual_grid_columns>
+                <observers>
+                    <supertron_ordersgrid>
+                        <model>ordersgrid/observer</model>
+                        <method>addColumnToResource</method>
+                    </supertron_ordersgrid>
+                </observers>
+            </sales_order_resource_init_virtual_grid_columns>
+        </events>
+		
+		
+   
+   
+		 
+	</global>
+	
+    <adminhtml>
+        <layout>
+         
+            <updates>
+                <supertron_ordersgrid>
+                    <file>supertron/ordersgrid.xml</file>
+                </supertron_ordersgrid>
+            </updates>
+        </layout>
+    </adminhtml>
+</config>
