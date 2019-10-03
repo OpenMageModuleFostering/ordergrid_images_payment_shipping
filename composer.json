@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Ordergrid_Images_Payment_Shipping",
+    "name": "OpenMageModuleFostering\/Ordergrid_Images_Payment_Shipping",
     "type": "magento-module",
     "license": "Open-Software-License-(OSL)",
     "homepage": "",
     "description": "We have integrated advanced features of order grid that will improve and ease order processing procedure",
     "authors": [
-    {
-        "name": "mailsupertron",
-        "email": "susmit.supertron@gmail.com"
-    }
-],
+        {
+            "name": "mailsupertron",
+            "email": "susmit.supertron@gmail.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
